@@ -1,0 +1,175 @@
+/* RESET Y VARIABLES */
+:root {
+    --primary: #0066CC;
+    --secondary: #2D3748;
+    --light: #f8f9fa;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+/* HERO SECTION */
+.hero {
+    background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+    color: white;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    max-width: 800px;
+    margin: 0 auto 1rem;
+    line-height: 1.2;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto 2rem;
+    opacity: 0.9;
+}
+
+.cta-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.cta-primary {
+    background-color: var(--primary);
+    color: white;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.cta-secondary {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+/* SERVICES SECTION */
+.services {
+    padding: 5rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.services h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--secondary);
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.service-card {
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-card h3 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+/* CLIENTS SECTION */
+.clients {
+    background-color: #f0f7ff;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.clients h2 {
+    margin-bottom: 2rem;
+    color: var(--secondary);
+}
+
+.client-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.client-logo {
+    height: 40px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.client-logo:hover {
+    opacity: 1;
+}
+
+/* CONTACT SECTION */
+.contact {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: white;
+}
+
+.contact-cta {
+    background-color: var(--primary);
+    color: white;
+    padding: 15px 40px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    display: inline-block;
+    margin: 2rem 0;
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--secondary);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.9rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .hero {
+        padding: 3rem 1.5rem;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .cta-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
