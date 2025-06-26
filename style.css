@@ -180,3 +180,11 @@ footer {
         transition: opacity 0.3s ease;
     }
 }
+
+@media (max-width: 350px) {
+    .services,
+    .clients {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+}
